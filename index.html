@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- nav bar -->
+        <nav  id="navbar" class="scrolled">
+            <!-- logo -->
+            <div class="logo">
+                <h2>Hassan Memon</h2>
+            </div>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home home"></i>HOME</a></li>
+                <li><a href=""><i class="fas fa-info-circle about"></i>ABOUT</a></li>
+                <li><a href=""><i class="fas fa-cog cog"></i>SERVICES</a></li>
+                <li><a href=""><i class="fas fa-user user"></i>PORTFOLIO</a></li>
+                <li><a href=""><i class="fas fa-envelope contact"></i>CONTACT</a></li>
+            </ul>
+        </nav>
+
+            <!-- hero section -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h5>This is me</h5>
+                <h1>Hassan Memon</h1>
+                <p>You will belive to relaise why this exercise is called the Dickens Pattern with refrence to the ghost showing Scrooge some Different futures.
+                </p>
+                <button>Discovet Now</button>
+            </div>
+                <img class="hero-img" src="img1.jpg" alt="Hassan Memon image">
+        </section>
+    </main>
+                <!--  About Section -->
+    <!-- <main>
+        <section id="about" class="about">
+        <div class="about-text">
+            <h2>About <span style="color: rgb(221, 0, 0);">  My Self</span></h2>
+        </div>
+
+        </section>
+    </main>
+    <footer>
+    </footer> -->
+    <script>
+    window.addEventListener("scroll", toggleNavbar);
+    window.addEventListener("load", toggleNavbar); // page load hone par bhi check
+
+    function toggleNavbar() {
+    let nav = document.querySelector("nav");
+    if (window.scrollY > 0) {
+      nav.classList.add("scrolled");  // border + shadow
+    } else {
+      nav.classList.remove("scrolled"); // sirf border
+    }
+  }
+</script>
+</body>
+</html>
